@@ -1,0 +1,5 @@
+/* All project cards read as copy first, image second. */
+.project{display:flex!important;flex-direction:row!important;align-items:center}
+.project .project-copy{order:1}
+.project .project-image{order:2}
+@media(max-width:700px){.project{flex-direction:column!important;align-items:stretch}.project .project-copy{order:1}.project .project-image{order:2}}
