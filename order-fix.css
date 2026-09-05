@@ -1,5 +1,5 @@
 /* All project cards read as copy first, image second. */
 .project{display:flex!important;flex-direction:row!important;align-items:center}
-.project .project-copy{order:1}
-.project .project-image{order:2}
-@media(max-width:700px){.project{flex-direction:column!important;align-items:stretch}.project .project-copy{order:1}.project .project-image{order:2}}
+.project .project-copy{order:1;flex:1 1 48%;min-width:0}
+.project .project-image{order:2;flex:1 1 52%;width:100%;min-width:0;min-height:320px;background-size:cover!important;background-repeat:no-repeat!important;background-position:center!important}
+@media(max-width:700px){.project{flex-direction:column!important;align-items:stretch}.project .project-copy{order:1}.project .project-image{order:2;width:100%;min-height:260px}}
