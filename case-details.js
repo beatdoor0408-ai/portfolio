@@ -15,5 +15,15 @@ document.addEventListener('DOMContentLoaded',()=>{const p=document.createElement
   interview.before(gallery);
   gallery.append(studio,interview);
  }
+ const teamPhoto=document.querySelector('#mjfc .mjfc-team-photo');
+ if(teamPhoto&&!document.querySelector('#mjfc .mjfc-gallery')){
+  const gallery=document.createElement('div');
+  gallery.className='mjfc-gallery';
+  const performance=document.createElement('figure');
+  performance.className='mjfc-performance-photo';
+  performance.innerHTML='<img src="assets/mjfc25-performance.jpg" alt="Live performance at Montreux Jazz Festival China 2025">';
+  teamPhoto.before(gallery);
+  gallery.append(performance,teamPhoto);
+ }
 });
 
