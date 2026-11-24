@@ -25,5 +25,9 @@ document.addEventListener('DOMContentLoaded',()=>{const p=document.createElement
   teamPhoto.before(gallery);
   gallery.append(performance,teamPhoto);
  }
+ const supportGrid=document.querySelector('#practice .support-grid');
+ if(supportGrid&&!supportGrid.querySelector('.musicring-case')){
+  supportGrid.insertAdjacentHTML('beforeend',`<article class="secondary-case musicring-case"><span class="num">07</span><h3>Shanghai Musicring Concert Series</h3><p class="role">Concert Production Intern · Shanghai Musicring Arts Communication</p><p>Coordinated three Shanghai concerts across a WeWork venue, a historic villa lawn and an intimate theatre, each attracting approximately 100 attendees. Supported government filings, artist schedules, venue communication, programme booklets and show setup, while contributing to sponsorship outreach; combined ticket and sponsorship revenue exceeded RMB 30,000.</p><div class="musicring-gallery"><img src="assets/musicring-choral-concert.jpg" alt="Musicring choral concert production in Shanghai"><img src="assets/musicring-theatre-concert.jpg" alt="Musicring theatre concert production in Shanghai"></div></article>`);
+ }
 });
 

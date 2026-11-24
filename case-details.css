@@ -13,3 +13,6 @@
 .mjfc-gallery img{display:block;width:100%;height:100%;object-fit:cover}
 .mjfc-performance-photo img,.mjfc-team-photo img{object-position:center}
 @media(max-width:700px){.mjfc-gallery{grid-template-columns:1fr}.mjfc-gallery img{height:auto;object-fit:contain}}
+.musicring-gallery{display:grid;grid-template-columns:1.12fr 1fr;gap:12px;margin-top:24px}
+.secondary-case .musicring-gallery img{display:block;width:100%;height:210px!important;max-height:none!important;object-fit:cover;margin:0}
+@media(max-width:700px){.musicring-gallery{grid-template-columns:1fr}.secondary-case .musicring-gallery img{height:auto!important;object-fit:contain}}
