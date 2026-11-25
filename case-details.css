@@ -18,3 +18,18 @@
 .musicring-gallery{display:grid;grid-template-columns:1.12fr 1fr;gap:12px;margin-top:32px}
 .secondary-case .musicring-gallery img{display:block;width:100%;height:360px!important;max-height:none!important;object-fit:cover;margin:0}
 @media(max-width:700px){.support-grid .musicring-case{grid-column:auto}.musicring-gallery{grid-template-columns:1fr}.secondary-case .musicring-gallery img{height:auto!important;object-fit:contain}}
+.practice-bridge{padding:8vw 10vw;background:#e8e3da}
+.bridge-intro{display:grid;grid-template-columns:1.15fr 1fr;gap:8vw;align-items:end;margin:5vw 0}
+.bridge-intro h2{font-size:clamp(40px,5vw,72px);line-height:.95;letter-spacing:-.07em;margin:0}
+.bridge-intro>p{font-size:18px;line-height:1.55;margin:0;max-width:580px}
+.bridge-logic{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #aaa49b;border-bottom:1px solid #aaa49b}
+.bridge-logic article{padding:30px 32px 32px 0;min-height:280px}
+.bridge-logic article+article{border-left:1px solid #aaa49b;padding-left:32px}
+.bridge-logic article>span{font:11px 'DM Mono',monospace;color:#77736c}
+.bridge-logic .label{margin:30px 0 12px}
+.bridge-logic h3{font-size:25px;line-height:1.1;letter-spacing:-.04em;margin:0 0 18px}
+.bridge-logic article>p:last-child{font-size:15px;line-height:1.55;margin:0;color:#57534d}
+.bridge-out{display:flex;justify-content:space-between;gap:5vw;align-items:flex-end;margin-top:34px}
+.bridge-out p{font-size:16px;line-height:1.5;max-width:720px;margin:0}
+.bridge-out span{font:10px 'DM Mono',monospace;text-transform:uppercase;color:#77736c;white-space:nowrap}
+@media(max-width:700px){.practice-bridge{padding:16vw 7vw}.bridge-intro,.bridge-logic{grid-template-columns:1fr}.bridge-intro{gap:28px;margin:12vw 0}.bridge-logic article{min-height:auto;padding:28px 0}.bridge-logic article+article{border-left:0;border-top:1px solid #aaa49b;padding-left:0}.bridge-out{display:block}.bridge-out span{display:block;margin-top:24px;white-space:normal}}
